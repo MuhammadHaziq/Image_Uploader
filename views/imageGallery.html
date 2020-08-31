@@ -1,0 +1,45 @@
+<div id='image_gallery_display'>
+<h2>Image Gallery</h2>
+
+<hr />
+
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Select Category</h4>
+    <form id="search-images-form" method="GET">
+      <div class="form-group col-lg-4">
+        <label for="category-image-dropdown">Select Category</label>
+        <select id="category-image-dropdown" class="form-control"> </select>
+        <div class="invalid-feedback">
+          Please Select One Option
+        </div>
+      </div>
+      <div class="from-group col-lg-4">
+        <button id="search_images" type="submit" class="btn btn-primary">
+          Search
+        </button>
+      </div>
+    </form>
+    <div id="catrgory-image-result"></div>
+  </div>
+</div>
+<div id="category-images-display"></div>
+<div class="clearfix"></div>
+</div>
+<div id='image_gallery_edit' style='display:none'>
+  <h2>Edit Image</h2>
+
+  <hr />
+  <div id="image_gallery_edit_form">
+<!-- Dynamic Form Div -->
+</div>
+<div id="edit_catrgory_image_result"></div>
+    <button id="back_image_gallery" type="button" class="btn btn-primary">
+      Back
+    </button>
+  </div>
+<script src="js/custom.js"></script>
+
+<script>
+  get_dropdown_categories();
+</script>

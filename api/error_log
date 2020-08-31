@@ -1,0 +1,12 @@
+[01-Oct-2018 10:02:27 America/Los_Angeles] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed and exactly 2 expected in /home/jnyvmqy4psrd/public_html/api/index.php:376
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/jnyvmqy4psrd/public_html/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#2 /home/jnyvmqy4psrd/public_html/api/Slim/Slim.php(1355): Slim\Route->dispatch()
+#3 /home/jnyvmqy4psrd/public_html/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#4 /home/jnyvmqy4psrd/public_html/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#5 /home/jnyvmqy4psrd/public_html/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#6 /home/jnyvmqy4psrd/public_html/api/Slim/Slim.php(1300): Slim\Middleware\PrettyExceptions->call()
+#7 /home/jnyvmqy4psrd/public_html/api/index.php(425): Slim\Slim->run()
+#8 {main}
+  thrown in /home/jnyvmqy4psrd/public_html/api/index.php on line 376
